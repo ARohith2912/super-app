@@ -1,0 +1,185 @@
+@import url('https://googleapis.com');
+/* ── Register Page ─────────────────────────────────────────────────────── */
+.reg-page {
+  display: flex;
+ 
+  background: black;
+}
+
+/* Left panel */
+.reg-left {
+  flex: 1;
+}
+
+
+.reg-left-overlay {
+background-image: url('/register.png') !important;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 48px 40px;
+}
+
+.reg-left-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+padding:30px;
+}
+
+/* Right panel */
+.reg-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  padding: 40px 24px;
+}
+
+.reg-form-card {
+  width: 100%;
+  max-width: 380px;
+}
+
+/* Logo */
+
+.reg-logo {
+  text-align: center;
+  font-family: 'Single Day', cursive !important; /* Forces the browser to apply this font */
+  padding: 6px 18px;
+  color:#72DB73;
+font-weight: 300;
+font-style: Regular;
+line-height: 140%;
+letter-spacing: 1%;
+padding-bottom: 20px;
+
+}
+
+
+
+
+.reg-subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+/* Fields */
+.reg-field {
+  margin-bottom: 12px;
+}
+
+.reg-input {
+  width: 100%;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 12px 14px;
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.reg-input::placeholder {
+  color: #666;
+}
+
+.reg-input:focus {
+  border-color: #39ff14;
+}
+
+.reg-input.input-error {
+  border-color: #ff4444;
+}
+
+.reg-input.input-valid {
+  border-color: #39ff14;
+}
+
+.reg-error {
+  display: block;
+  color: #ff4444;
+  font-size: 0.78rem;
+  margin-top: 4px;
+}
+
+/* Checkbox */
+.reg-checkbox-row {
+  margin-bottom: 20px;
+}
+
+.reg-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #aaa;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.reg-checkbox-label input[type="checkbox"] {
+  accent-color: #39ff14;
+  width: 14px;
+  height: 14px;
+}
+
+/* Button */
+.reg-btn {
+  width: 100%;
+  background: #39ff14;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.reg-btn:hover {
+  background: #2de012;
+  transform: translateY(-1px);
+}
+
+.reg-btn:active {
+  transform: translateY(0);
+}
+
+/* Footer text */
+.reg-terms,
+.reg-privacy {
+  color: #666;
+  font-size: 0.75rem;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+.reg-terms a,
+.reg-privacy a {
+  color: #39ff14;
+  text-decoration: none;
+}
+
+.reg-terms a:hover,
+.reg-privacy a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reg-left {
+    display: none;
+  }
+
+  .reg-right {
+    padding: 32px 20px;
+  }
+}

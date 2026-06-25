@@ -1,0 +1,79 @@
+/* ── Notes Widget ───────────────────────────────────────────────────────── */
+.notes-widget {
+  background: #fef08a;
+  border-radius: 14px;
+  padding: 20px;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 200px;
+  box-shadow: 4px 4px 0 #ca8a04;
+}
+
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.notes-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notes-word-count {
+  font-size: 0.75rem;
+  color: #92400e;
+}
+
+.notes-clear-btn {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #7c2d12;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.notes-clear-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.notes-textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  outline: none;
+  font-family: inherit;
+  min-height: 120px;
+}
+
+.notes-textarea::placeholder {
+  color: #a16207;
+  font-style: italic;
+}
+
+.notes-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.notes-saved {
+  font-size: 0.73rem;
+  color: #92400e;
+  opacity: 0.7;
+}
